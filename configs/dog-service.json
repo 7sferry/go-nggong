@@ -1,0 +1,17 @@
+{
+  "appName": "dog-service",
+  "server": {
+    "port": 7382
+  },
+  "database": {
+    "url": "postgres://postgres:12345@localhost:5432/postgres?sslmode=disable"
+  },
+  "logging": {
+    "consoleLevel": "INFO",
+    "fileLevel": "WARN",
+    "file": "logs/dog-service.log"
+  },
+  "services": {
+    "dogprice": "http://localhost:7384"
+  }
+}
